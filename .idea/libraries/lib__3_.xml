@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib (3)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/spring01/web/WEB-INF/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE-dist/spring-framework-4.1.6.RELEASE/libs/spring-context-4.1.6.RELEASE-sources.jar!/" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-jdbc/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/04 Spring整合MyBatis需要的jar/mybatis-spring-1.2.3-sources.jar!/" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE-dist/spring-framework-4.1.6.RELEASE/libs/spring-web-4.1.6.RELEASE-javadoc.jar!/" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE-dist/spring-framework-4.1.6.RELEASE/libs/spring-web-4.1.6.RELEASE-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/spring01/web/WEB-INF/lib" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjsxt.mapper.StudentMapper">
+    <!--查询学生表 N+1方式-->
+    <resultMap id="sm" type="student">
+        <!--主键用id标签-->
+        <id property="sid" column="sid"/>
+        <result column="tid" property="tid"/>
+        <!--关联单个对象使用association标签,使用tid字段作为查询参数进行查询-->
+        <association property="teacher" column="tid" select="com.bjsxt.mapper.TeacherMapper.selTeacherById"/>
+    </resultMap>
+    <select id="findStu" resultMap="sm">
+        select * from student
+    </select>
+
+    <!--查询学生表 基于联合查询语句-->
+    <resultMap id="smByUnion" type="student">
+        <!--这种方式必须自定义全部字段的映射-->
+        <id column="sid" property="sid"/>
+        <result column="sname" property="sname"/>
+        <result column="sage" property="sage"/>
+        <result column="tid" property="tid"/>
+        <association property="teacher" column="tid" javaType="Teacher">
+            <id column="tid" property="tid"/>
+            <result column="tname" property="tname"/>
+        </association>
+    </resultMap>
+    <select id="selByUnion" resultMap="smByUnion">
+        select * from student
+        join teacher t on student.tid = t.tid
+        <where>
+            <if test="param2!=null and param2!=''">
+                and sname = #{param2}
+            </if>
+            <if test="param3!=null and param3 !=''">
+                and tname = #{param3}
+            </if>
+        </where>
+        limit #{param1.pageStart},#{param1.pageSize}
+    </select>
+
+
+    <!--根据教师表tid查询对应学生-->
+    <select id="findByTid" resultType="student">
+        select * from student where tid = #{tid}
+    </select>
+
+    <!--条件查询总条数-->
+    <select id="findCount" resultType="int">
+        select count(*) from student
+        join teacher t on student.tid = t.tid
+        <where>
+            <if test="param1!=null and param1!=''">
+                and sname = #{param1}
+            </if>
+            <if test="param2!=null and param2 !=''">
+                and tname = #{param2}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
+    

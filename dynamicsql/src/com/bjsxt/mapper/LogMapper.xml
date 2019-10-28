@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace与包名+接口名对应-->
+<mapper namespace="com.bjsxt.mapper.LogMapper">
+    <!--id号与方法名对应-->
+    <!-- <select id="selByAccinAccout" resultType="Log">
+         /*多参数可以省略参数类型*/
+         select * from log where 1=1
+         /*test中是OGNL表达式*/
+         <if test="inid!=null and inid!=''">
+             and inid = #{inid}
+         </if>
+         <if test="outid!=null and outid!=''">
+             and outid = #{outid}
+         </if>
+     </select>-->
+
+    <select id="selByAccinAccout" resultType="Log">
+        /*多参数可以省略参数类型*/
+        select * from log
+        /*test中是OGNL表达式*/
+        <where>
+            <if test="inid!=null and inid!=''">
+                and inid = #{inid}
+            </if>
+            <if test="outid!=null and outid!=''">
+                and outid = #{outid}
+            </if>
+        </where>
+
+    </select>
+    <update id="updt" parameterType="Log">
+        update log
+        <set>
+
+            <if test="inid!=null and inid!=''">
+                inid = #{inid},
+            </if>
+            <if test="outid!=null and outid!=''">
+                outid = #{outid},
+            </if>
+        </set>
+          where money = 520
+
+
+    </update>
+</mapper>

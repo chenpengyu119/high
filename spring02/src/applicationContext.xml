@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--前置通知-->
+    <bean id="mybefore" class="com.bjsxt.advice.MyBeforeAdvice"/>
+    <!--后置通知-->
+    <bean id="myafter" class="com.bjsxt.advice.MyAfterAdvice"/>
+<!--    <aop:config >
+        &lt;!&ndash;切点 方法必须是公共的&ndash;&gt;
+        <aop:pointcut id="mypoint" expression="execution(* com.bjsxt.pojo.Demo.*(..))"/>
+        &lt;!&ndash;前置通知&ndash;&gt;
+        <aop:advisor advice-ref="mybefore" pointcut-ref="mypoint"/>
+        &lt;!&ndash;后置通知&ndash;&gt;
+        <aop:advisor advice-ref="myafter" pointcut-ref="mypoint"/>
+    </aop:config>
+    <bean id="demo" class="com.bjsxt.pojo.Demo"/>-->
+    <!--AspectJ方式-->
+    <bean id="demo" class="com.bjsxt.pojo.Demo"/>
+    <!--异常通知类-->
+    <bean id="throwAdvice" class="com.bjsxt.advice.MyThrowAcvice"/>
+    <aop:config>
+        <!--配置异常通知类-->
+        <aop:aspect ref="throwAdvice">
+            <!--切点-->
+            <aop:pointcut id="mypoint" expression="execution(* com.bjsxt.pojo.Demo.demo1())"/>
+            <!-- 异常通知-->
+            <aop:after-throwing method="myThrowAdvice" pointcut-ref="mypoint" throwing="e"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.PhoneMapper">
+
+
+        <sql id="condition">
+                <where>
+                        <if test="param2.name!=null and param2.name != ''">
+
+                                <bind name="na" value=" '%' +param2.name+ '%' "/>
+                                and name like #{na}
+                        </if>
+                        <if test="param2.phone!=null and param2.phone != ''">
+                                and phone = #{param2.phone}
+                        </if>
+                </where>
+
+        </sql>
+        <select id="find" resultType="phone">
+                /*条件查询*/
+                select * from phone
+               <include refid="condition"></include>
+                limit #{param1.pageStart},#{param1.pageSize}
+
+        </select>
+
+        <select id="findCount" resultType="int">
+                /*查询总条数*/
+                select count(1) from phone
+                <include refid="condition"></include>
+
+        </select>
+
+        <delete id="delById">
+                /*根据id删除记录*/
+                delete from phone where id in
+                <foreach collection="array" index="index" open="(" close=")" separator="," item="id">
+                        #{id}
+                </foreach>
+
+        </delete>
+
+
+
+
+</mapper>

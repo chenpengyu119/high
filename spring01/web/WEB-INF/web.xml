@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+    <!--上下文参数-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <!--Spring配置文件-->
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+
+    <!--Spring封装了一个监听器，可以帮助加载Spring的配置文件-->
+    <listener>
+        <!--该监听器会基于servlet的context-param的contextConfigLocation创建一个 WebApplicationContext-->
+        <!--contextConfigLocation中配置了Spring配置文件的路径-->
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+</web-app>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="springmvc-interceptor-test01:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_interceptor_test01_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="springmvc-interceptor-test01/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springmvc-interceptor-test01" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

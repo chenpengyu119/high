@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.UserMapper">
+
+    <resultMap id="sm" type="com.bjsxt.pojo.User">
+        <id property="id" column="id"/>
+        <result column="pwd" property="password"/>
+        <result column="uname" property="uname"/>
+    </resultMap>
+    <select id="find" resultMap="sm" parameterType="com.bjsxt.pojo.User">
+        select  * from users where uname=#{uname}
+        and pwd = #{password}
+    </select>
+</mapper>

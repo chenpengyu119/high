@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.FlowerMapper">
+    <select id="selectFlower" resultType="FlOwEr">
+        select * from flower
+    </select>
+
+    <!--添加-->
+    <insert id="insF">
+        insert into flower values(default ,'郁金香',50.0,'大雪山')
+    </insert>
+    <!--删除-->
+    <delete id="delF">
+        delete from flower where id = 7
+    </delete>
+
+    <!--  含有参数- -->
+    <select id="selByid" parameterType="int" resultType="com.bjsxt.pojo.Flower">
+        select * from flower where id=#{0}
+    </select>
+
+    <!--使用对象传递参数-->
+    <select id="selMoreParam" parameterType="com.bjsxt.pojo.Flower" resultType="com.bjsxt.pojo.Flower">
+        select * from flower where name=#{name} and production = #{production}
+    </select>
+</mapper>

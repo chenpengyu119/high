@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="people" class="com.bjsxt.pojo.People">
+        <!--第一个参数-->
+        <constructor-arg index="0" value="123"/>
+        <!--第二个参数-->
+        <constructor-arg index="1" value="张三"/>
+    </bean>
+    <!--实例工厂-->
+    <bean id="beanfactory" class="com.bjsxt.factory.PeopleFactory"/>
+    <bean id="peo"  factory-bean="beanfactory" factory-method="newInstance"/>
+
+    <!--静态工厂-->
+    <bean id="peo2" class="com.bjsxt.factory.PeopleStaticFactory" factory-method="newInstance"/>
+
+    <!--设置给bean的属性赋值 使用set方法-->
+    <bean class="com.bjsxt.pojo.People" id="people2">
+
+        <property name="id" value="12"/>
+
+        <property name="name" >
+            <value>使用set方法2</value>
+        </property>
+        <!--属性类型为集合-->
+        <property name="sets">
+            <set>
+                <value>一</value>
+                <value>二</value>
+                <value>三</value>
+            </set>
+        </property>
+        <!--属性类型为list-->
+        <property name="list">
+            <list>
+                <value>1</value>
+                <value>2</value>
+            </list>
+        </property>
+        <!--属性类型为数组-->
+        <property name="arrs">
+            <array>
+                <value>数组元素1</value>
+                <value>数组元素二</value>
+            </array>
+        </property>
+
+        <!--属性类型为map-->
+        <property name="map">
+            <map>
+                <!--方法 1-->
+                <entry key="1" value="A"/>
+            </map>
+        </property>
+        <!--属性为属性文件类型properties-->
+        <property name="properties">
+            <props>
+                <prop key="url">google.com</prop>
+                <prop key="username">uname</prop>
+            </props>
+        </property>
+     </bean>
+
+
+    <!--测试依赖注入功能-->
+    <bean name="people3" class="com.bjsxt.pojo.People">
+        <property name="desk" ref="desk"/>
+    </bean>
+
+    <bean class="com.bjsxt.pojo.Desk" id="desk">
+        <property name="id" value="1"/>
+        <property name="price" value="12.3"/>
+    </bean>
+
+    <!--Spring整合Mybatis-->
+    <!--数据源封装类，获取数据库连接-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="url" value="jdbc:mysql://localhost:3306/high"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    </bean>
+
+    <!--Spring中创建SqlSessionFactory的类-->
+    <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--引入dataSource连接数据库，因为创建factory的时候已经创建了数据库-->
+        <!--dataSource的类型是DataSource，是一个接口，DriverManagerDataSource的父类实现了它-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--赋值扫描一个包，和mybatis配置文件中扫描mapper接口和xml的配置一样的作用-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--配置要扫描的包-->
+        <property name="basePackage" value="com.bjsxt.mapper"/>
+        <!--将扫描包和上面创建factory关联起来-->
+        <property name="sqlSessionFactory" ref="factory"></property>
+     </bean>
+    <!--因为ServiceImpl中有mapper接口类型的属性，想给一个属性赋值，必须将该属性所在的类交给Spring进行管理。-->
+    <bean id="flowerService" class="com.bjsxt.service.impl.FlowerServiceImpl">
+        <!--依赖注入-->
+        <property name="flowerMapper" ref="flowerMapper"/>
+    </bean>
+
+
+
+    <!--测试由Spring管理的对象A，其所依赖的对象B是否只能由Spring进行管理-->
+    <bean id="classB" class="com.bjsxt.test.ClassB"/>
+
+
+</beans>

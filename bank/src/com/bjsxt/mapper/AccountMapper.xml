@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjsxt.mapper.AccountMapper">
+    <!--查询转账账户-->
+    <select id="selOut" resultType="com.bjsxt.pojo.Account" parameterType="com.bjsxt.pojo.Account">
+        select * from account where aid = #{aid} and apwd = #{apwd}
+    </select>
+
+    <!--查询入账账户-->
+    <select id="selIn" resultType="com.bjsxt.pojo.Account" parameterType="com.bjsxt.pojo.Account">
+        select * from account where aid = #{aid} and aname = #{aname}
+    </select>
+
+    <!--转账-->
+    <update id="updt" parameterType="com.bjsxt.pojo.Account">
+        update account set money = money + #{money} where aid = #{aid}
+    </update>
+
+    <!--添加日志信息-->
+    <insert id="ins" parameterType="com.bjsxt.pojo.Log">
+        insert into log values(#{outid},#{inid},#{money})
+    </insert>
+</mapper>

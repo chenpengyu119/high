@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjsxt.mapper.AnswerMapper">
+
+    <resultMap id="am" type="answer">
+        <id property="id" column="id"/>
+        <result column="ansCount" property="ansCount"/>
+        <result column="ansDate" property="ansDate"/>
+        <result column="qid" property="qid"/>
+        <association property="question" javaType="question">
+            <id property="id" column="qid"/>
+            <result property="title" column="title"/>
+            <result property="detailDesc" column="detailDesc"/>
+            <result property="answerCount" column="answerCount"/>
+            <result property="lastModified" column="lastModified"/>
+        </association>
+    </resultMap>
+    <select id="findList" resultMap="am">
+        select * from answers  a
+        right  join questions q
+        on q.id = a.qid
+        where a.qid = #{0}
+    </select>
+
+    <insert id="insertOne">
+        insert into answers values(null,#{0},now(),#{1})
+    </insert>
+</mapper>

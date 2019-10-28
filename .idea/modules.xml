@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/annotation-aop/annotation-aop.iml" filepath="$PROJECT_DIR$/annotation-aop/annotation-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aop-aspectJ/aop-aspectJ.iml" filepath="$PROJECT_DIR$/aop-aspectJ/aop-aspectJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aop-schema/aop-schema.iml" filepath="$PROJECT_DIR$/aop-schema/aop-schema.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asksystem/asksystem.iml" filepath="$PROJECT_DIR$/asksystem/asksystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank/bank.iml" filepath="$PROJECT_DIR$/bank/bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicsql/dynamicsql.iml" filepath="$PROJECT_DIR$/dynamicsql/dynamicsql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flower/flower.iml" filepath="$PROJECT_DIR$/flower/flower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/high.iml" filepath="$PROJECT_DIR$/high.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login01/login01.iml" filepath="$PROJECT_DIR$/login01/login01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login02/login02.iml" filepath="$PROJECT_DIR$/login02/login02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opensessioninview/opensessioninview.iml" filepath="$PROJECT_DIR$/opensessioninview/opensessioninview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxymode/proxymode.iml" filepath="$PROJECT_DIR$/proxymode/proxymode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-aop-bank/spring-aop-bank.iml" filepath="$PROJECT_DIR$/spring-aop-bank/spring-aop-bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring01/spring01.iml" filepath="$PROJECT_DIR$/spring01/spring01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring02/spring02.iml" filepath="$PROJECT_DIR$/spring02/spring02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc-interceptor-test01/springmvc-interceptor-test01.iml" filepath="$PROJECT_DIR$/springmvc-interceptor-test01/springmvc-interceptor-test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc-login/springmvc-login.iml" filepath="$PROJECT_DIR$/springmvc-login/springmvc-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc-test1/springmvc-test1.iml" filepath="$PROJECT_DIR$/springmvc-test1/springmvc-test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-ask2/ssm-ask2.iml" filepath="$PROJECT_DIR$/ssm-ask2/ssm-ask2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stu/stu.iml" filepath="$PROJECT_DIR$/stu/stu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teastu/teastu.iml" filepath="$PROJECT_DIR$/teastu/teastu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/validcode/validcode.iml" filepath="$PROJECT_DIR$/validcode/validcode.iml" />
+    </modules>
+  </component>
+</project>

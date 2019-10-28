@@ -1,0 +1,56 @@
+<component name="libraryTable">
+  <library name="lib (7)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/login02/web/WEB-INF/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/gradle/jdiff" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-aop/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-aop/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-aspects/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-aspects/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-beans-groovy/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-beans/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-beans/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-context-support/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-context-support/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-context/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-context/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-core/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-core/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-expression/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-expression/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-instrument-tomcat/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-instrument/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-jdbc/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-jdbc/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-jms/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-jms/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-messaging/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-messaging/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-orm-hibernate4/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-orm-hibernate4/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-orm/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-orm/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-oxm/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-oxm/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-test/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-test/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-tx/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-tx/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-web/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-web/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-webmvc-portlet/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-webmvc-portlet/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-webmvc-tiles2/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-webmvc-tiles2/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-webmvc/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-webmvc/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-websocket/src/main/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/spring-websocket/src/test/java" />
+      <root url="jar://E:/BaiduNetdiskDownload/框架/05. 高级框架阶段【北京尚学堂·百战程序员】/02 Spring4/02 Spring4/01 Spring第一天/01 资料/01 Spring 官方包及源码/spring-framework-4.1.6.RELEASE源码.zip!/spring-framework-4.1.6.RELEASE/src/test/java" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/login02/web/WEB-INF/lib" recursive="false" />
+  </library>
+</component>

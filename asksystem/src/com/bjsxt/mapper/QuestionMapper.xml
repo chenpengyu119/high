@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjsxt.mapper.QuestionMapper">
+    <select id="findAll" resultType="com.bjsxt.pojo.Question">
+        select * from questions order by lastModified desc
+    </select>
+
+    <insert id="add">
+        insert into questions values(null,#{param1},#{param2},0,now())
+    </insert>
+
+    <update id="update">
+        update questions
+        set answerCount = answerCount+1,
+            lastModified = now()
+        where id = #{0}
+    </update>
+</mapper>
